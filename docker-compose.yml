@@ -1,0 +1,9 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: apiGitHub
+    image: api_github:latest
+    ports:
+      - "8080:8080"
